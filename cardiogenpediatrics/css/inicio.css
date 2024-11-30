@@ -1,0 +1,484 @@
+/* Reset General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    text-align: center; /* Centra todo el texto en el cuerpo de la página */
+}
+
+/* Hero Section */
+.inicio {
+    display: block;
+    margin: 70px auto 0; /* Agrega un margen superior de 50px para bajarla */
+    width: 500px; /* Ajusta el tamaño en píxeles */
+    text-align: center; /* Opcional, para centrar el texto dentro del bloque */
+
+}
+.bienvenida {
+    font-size: 13px;
+    color: #4CAF50;
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    justify-content: center; /* Alinea el texto en el centro de manera predeterminada */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 5vh; /* Asegura que el contenedor tenga altura completa */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Menú Superior */
+nav {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%); /* Corrige la posición horizontal para centrarlo */
+    width: 50%;
+    background: rgba(94, 142, 190, 0.9); /* Azul oscuro */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #00509e;
+    border-radius: 5px;
+}
+
+/* Contenido Principal */
+.hero-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Asegura que el texto dentro de hero-content esté centrado */
+}
+
+.logo {
+    position: absolute; /* Posiciona la imagen de manera absoluta respecto a su contenedor */
+    top: 20px; /* Distancia desde la parte superior del contenedor */
+    left: 20px; /* Punto base desde el lado izquierdo */
+    margin-left: 10%; /* Mueve un poco a la derecha sin alterar el punto base */
+    width: 100px; /* Tamaño de la imagen del logo para pantallas pequeñas */
+}
+
+.ambulancia{
+    position: relative; /* Permite ajustes precisos */
+    float: right; /* Alinea la imagen a la derecha */
+    margin-right: 250px; /* Reduce este valor para moverla a la izquierda */
+    margin-top: -30px; /* Espacio en la parte superior */
+    width: 120px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantén las proporciones de la imagen */
+    cursor: pointer; /* Cambia el cursor para indicar interacción */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+.ambulancia-texto {
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más destacado */
+    color: #1010ad; /* Color del texto */
+    text-align: right; /* Alinea el texto a la derecha */
+    margin-left: 60px; /* Aumenta el espacio entre la imagen y el número */
+    margin-top: 7px; /* Baja el número */
+    float: right; /* Alinea el número a la derecha */
+    position: relative;
+    left: 180px; /* Mueve el número más a la derecha */
+}
+
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    background: #00509e; /* Azul fuerte */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #003f7d; /* Azul más oscuro */
+}
+/* Centrar el texto de los párrafos en el contenedor */
+.texto {
+    text-align: center;  /* Centra el texto dentro de los elementos con la clase .texto */
+    margin-bottom: 20px;
+    max-width: 800px;  /* Ajusta el ancho máximo según lo desees */
+    margin-left: auto;  /* Aplica margen automático a la izquierda para centrar */
+    margin-right: auto; /* Aplica margen automático a la derecha para centrar */
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 35px; /* Ajusta este valor para mover el texto hacia abajo */
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(94, 142, 190, 0.9); /* Azul pastel */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #fbfbfb;
+    height: 70px; /* Define un alto para alinear verticalmente */
+    box-sizing: border-box; /* Asegura que el padding no afecte las dimensiones */
+    bottom: 0; /* Posiciona el footer en la parte más baja de la página */
+}
+
+/* Reset General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    text-align: center; /* Centra todo el texto en el cuerpo de la página */
+}
+
+/* Hero Section */
+.inicio {
+    display: block;
+    margin: 70px auto 0; /* Agrega un margen superior de 50px para bajarla */
+    width: 500px; /* Ajusta el tamaño en píxeles */
+    text-align: center; /* Opcional, para centrar el texto dentro del bloque */
+
+}
+.bienvenida {
+    font-size: 13px;
+    color: #4CAF50;
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    justify-content: center; /* Alinea el texto en el centro de manera predeterminada */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 5vh; /* Asegura que el contenedor tenga altura completa */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Menú Superior */
+nav {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%); /* Corrige la posición horizontal para centrarlo */
+    width: 50%;
+    background: rgba(94, 142, 190, 0.9); /* Azul oscuro */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #00509e;
+    border-radius: 5px;
+}
+
+/* Contenido Principal */
+.hero-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Asegura que el texto dentro de hero-content esté centrado */
+}
+
+.logo {
+    position: absolute; /* Posiciona la imagen de manera absoluta respecto a su contenedor */
+    top: 20px; /* Distancia desde la parte superior del contenedor */
+    left: 20px; /* Punto base desde el lado izquierdo */
+    margin-left: 10%; /* Mueve un poco a la derecha sin alterar el punto base */
+    width: 100px; /* Tamaño de la imagen del logo para pantallas pequeñas */
+}
+
+.ambulancia{
+    position: relative; /* Permite ajustes precisos */
+    float: right; /* Alinea la imagen a la derecha */
+    margin-right: 250px; /* Reduce este valor para moverla a la izquierda */
+    margin-top: -30px; /* Espacio en la parte superior */
+    width: 120px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantén las proporciones de la imagen */
+    cursor: pointer; /* Cambia el cursor para indicar interacción */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+.ambulancia-texto {
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold; /* Hace que el texto sea más destacado */
+    color: #1010ad; /* Color del texto */
+    text-align: right; /* Alinea el texto a la derecha */
+    margin-left: 60px; /* Aumenta el espacio entre la imagen y el número */
+    margin-top: 7px; /* Baja el número */
+    float: right; /* Alinea el número a la derecha */
+    position: relative;
+    left: 180px; /* Mueve el número más a la derecha */
+}
+
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    background: #00509e; /* Azul fuerte */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #003f7d; /* Azul más oscuro */
+}
+
+/* Centrar el texto de los párrafos en el contenedor */
+.texto {
+    text-align: center;  /* Centra el texto dentro de los elementos con la clase .texto */
+    margin-bottom: 20px;
+    max-width: 800px;  /* Ajusta el ancho máximo según lo desees */
+    margin-left: auto;  /* Aplica margen automático a la izquierda para centrar */
+    margin-right: auto; /* Aplica margen automático a la derecha para centrar */
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 35px; /* Ajusta este valor para mover el texto hacia abajo */
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(94, 142, 190, 0.9); /* Azul pastel */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #fbfbfb;
+    height: 70px; /* Define un alto para alinear verticalmente */
+    box-sizing: border-box; /* Asegura que el padding no afecte las dimensiones */
+    bottom: 0; /* Posiciona el footer en la parte más baja de la página */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .inicio {
+        width: 90%; /* Ajusta el ancho para que ocupe más espacio en pantallas pequeñas */
+        margin-top: 50px; /* Reduce el margen superior */
+    }
+
+    .logo {
+        width: 50px; /* Tamaño más pequeño para teléfonos */
+        top: 15px; /* Baja el logo aún más */
+        left: -35px; /* Ajusta la posición horizontal más hacia la izquierda */
+    }
+
+    .bienvenida {
+        font-size: 12px; /* Reduce el tamaño de fuente */
+        padding: 10px; /* Ajusta el padding */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+
+    nav {
+        width: 76%; /* Asegura que ocupe todo el ancho */
+        display: flex;
+        justify-content: space-between; /* Distribuye los elementos a la izquierda y derecha */
+        padding: 0.5px 10px; /* Ajusta el padding */
+        z-index: 3;
+        background: rgba(94, 142, 190, 0.9); /* Azul oscuro */
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex; /* Hace que los elementos estén en fila */
+        gap: 5px; /* Ajusta el espacio entre los elementos */
+        text-align: center; /* Centra los elementos */
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        font-size: 0.5rem; /* Ajusta el tamaño de fuente */
+        padding: 10px 10px; /* Ajusta el padding */
+        display: block; /* Hace que cada enlace ocupe toda la línea */
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+        background: #00509e; /* Cambia el color al pasar el mouse */
+        border-radius: 5px;
+    }
+    .ambulancia {
+        width: 60px; /* Ajusta el tamaño de la imagen */
+        margin-top: -15px; /* Ajusta el margen superior */
+        left: 255px; /* Positivo para moverla a la derecha */
+    }
+    
+    .ambulancia-texto {
+        font-size: 6.5px; /* Ajusta el tamaño del texto */
+        left: -6px; /* Aumenta el valor para mover el texto más a la derecha */
+        margin-top: -5px;
+    }
+    
+
+    .hero-content {
+        padding: 10px; /* Ajusta el padding en el contenido */
+    }
+
+    p {
+        font-size: 1rem; /* Reduce el tamaño de fuente */
+        margin-bottom: 10px; /* Reduce el espacio inferior */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Ajusta el tamaño del botón */
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    .footer {
+        font-size: 10px; /* Ajusta el tamaño de la fuente en el footer */
+        padding: 8px; /* Ajusta el padding */
+    }
+}
+
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        width: 75%; /* Ajusta el tamaño para pantallas medianas */
+        padding: 15px 20px; /* Ajusta el padding */
+    }
+
+    nav ul {
+        gap: 15px; /* Ajusta el espacio entre los elementos */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+    }
+
+    .ambulancia {
+        width: 80px; /* Ajusta el tamaño de la imagen */
+        margin-top: -25px; /* Ajusta el margen superior */
+        left: 220px; /* Positivo para moverla a la derecha */
+    }
+    
+    
+    .ambulancia-texto {
+        font-size: 9px; /* Ajusta el tamaño del texto */
+        left: 345px; /* Aumenta el valor para mover el texto más a la derecha */
+        margin-top: 7px;
+    }
+    
+    .btn {
+        padding: 10px 18px; /* Ajusta el tamaño del botón */
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+    .logo {
+        width: 70px; /* Tamaño ajustado para tablets */
+        top: 25px; /* Baja el logo un poco más */
+        left: -60px; /* Ajusta la posición horizontal */
+    }
+
+}
+
+/* Estilos para pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+    nav {
+        width: 50%; /* Mantiene el tamaño original para pantallas grandes */
+        padding: 15px 20px; /* Ajusta el padding */
+    }
+
+    nav ul {
+        gap: 30px; /* Ajusta el espacio entre los elementos */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Mantiene el tamaño de la fuente para pantallas grandes */
+    }
+
+    .ambulancia {
+        width: 100px; /* Tamaño adecuado para pantallas grandes */
+        margin-top: -30px; /* Ajusta el margen superior */
+        right: 30px; /* Ajusta la posición */
+    }
+
+    .ambulancia-texto {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        left: 180px;
+        margin-top: 7px;
+    }
+}

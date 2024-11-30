@@ -1,0 +1,276 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header {
+    background-color: #a3d4ff;
+    color: white;
+    padding: 1px 10px; /* Reduce el espacio interno (arriba/abajo y los lados) */
+    text-align: center;
+    width: 80%; /* Cambié el ancho al 80% del contenedor para hacerlo más estrecho */
+    max-width: 500px; /* Establece un máximo de 500px para que no se estire demasiado en pantallas grandes */
+    margin: 1cm auto 0 auto; /* Empuja el header hacia abajo 1cm y lo centra horizontalmente */
+    height: 80px; /* Ajusta la altura a 80px */
+}
+
+
+.search-bar {
+    margin: 80px auto 20px auto; /* Aumenta el margen superior para moverlo más abajo */
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Container */
+.container {
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.medico-container {
+    display: grid; /* Usamos una grilla para las tarjetas */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Distribuye las tarjetas en columnas de 300px */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Centra las tarjetas verticalmente */
+    padding: 20px; /* Añade algo de relleno alrededor del contenedor */
+    max-width: 2000px; /* Ancho máximo del contenedor */
+    margin-left: 40%; /* Centra el contenedor hacia la izquierda */
+    margin-right: 40%; /* Centra el contenedor hacia la derecha */
+}
+
+
+/* Medico Card */
+.medico-card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 20px; /* Mantiene el margen de 20px a los lados */
+    padding: 20px; /* Relleno dentro de la tarjeta */
+    width: calc(100% + 2cm); /* Aumenta el ancho en 2cm respecto al 100% del contenedor */
+    margin-left: calc(-1cm); /* Mueve la tarjeta hacia la izquierda */
+    margin-right: auto; /* Mantiene el margen automático a la derecha */
+}
+
+
+.medico-card .medico-image{
+margin: 1.5rem auto;
+    
+}
+    .medico-image img {
+    width:100%;
+    height: 320px;
+    object-fit:fill;
+    border-bottom: 1px solid #ccc;
+}
+
+.medico-info {
+    padding: 20px;
+}
+
+.medico-info h3 {
+    margin: 0;
+    color: #333;
+
+}
+
+.medico-info p {
+    margin: 10px 0;
+    color: #555;
+    
+}
+.back-button .btn-regresar {
+    text-decoration: none;
+    background-color: #8ccf9b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.logo {
+    position: absolute; /* Posiciona la imagen de manera absoluta respecto a su contenedor */
+    top: 20px; /* Distancia desde la parte superior del contenedor */
+    left: 20px; /* Punto base desde el lado izquierdo */
+    margin-left: 10%; /* Mueve un poco a la derecha sin alterar el punto base */
+    width: 100px; /* Tamaño de la imagen del logo para pantallas pequeñas */
+}
+.medico-containers {
+    background-color: #acd3f5; /* Fondo pastel */
+    padding: 15px; /* Menos padding para hacerlo más pequeño */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center; /* Centra el texto */
+    width: 80%; /* Controla el ancho del contenedor */
+    max-width: 600px; /* Asegura que el contenedor no sea más grande que 600px */
+    margin-left: auto; /* Centra el contenedor */
+    margin-right: auto; /* Centra el contenedor */
+}
+
+.medico-containers p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.salud {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff8c00; /* Un color cálido y atractivo */
+    margin-top: 20px;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    header {
+        width: 90%;
+        margin: 1cm auto 0 auto;
+        height: 70px; /* Ajustado a una altura más pequeña */
+    }
+
+    .search-bar input[type="text"] {
+        width: 250px;
+    }
+
+    .search-bar button {
+        padding: 8px 16px;
+    }
+
+    .medico-container {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .medico-card {
+        width: calc(100% + 1.5cm);
+        margin-left: calc(-0.75cm);
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .medico-containers {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 60%;
+        margin: 1cm auto 0 auto;
+        height: 110px; /* Reducida para pantallas más pequeñas */
+    }
+
+    .search-bar input[type="text"] {
+        width: 200px;
+    }
+
+    .search-bar button {
+        padding: 8px 16px;
+    }
+
+    .medico-container {
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .medico-card {
+        width: 90%; /* Ajusta el ancho de la tarjeta */
+        margin: 50px auto; /* Centra el contenedor horizontalmente */
+        padding: 50px; /* Ajusta el padding según sea necesario */
+
+}
+    .medico-card .medico-image img {
+        max-width: 300px;
+    }
+
+    .logo {
+        width: 70px;
+        margin-left: 5%;
+    }
+
+    .medico-containers {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 200px;
+        margin: 1cm auto 1 auto;
+        height: 150px; /* Reducida aún más para dispositivos pequeños */
+    }
+
+    .search-bar input[type="text"] {
+        width: 180px;
+    }
+
+    .search-bar button {
+        padding: 6px 14px;
+    }
+
+    .medico-container {
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+        .medico-card {
+            width: 80%; /* Ajusta el ancho de la tarjeta */
+            margin: 10px auto; /* Centra el contenedor horizontalmente */
+            padding: 5px; /* Ajusta el padding según sea necesario */
+
+    }
+
+    .medico-card .medico-image img {
+        max-width: 200px;
+    }
+
+    .medico-card h3 {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    .medico-card p {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 60px;
+        margin-left: 0.5%;
+    }
+
+    .medico-containers {
+        width: 90%;
+        max-width: 300px;
+    }
+}

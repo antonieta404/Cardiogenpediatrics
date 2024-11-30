@@ -1,0 +1,166 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #a3d4ff;
+    color: white;
+    padding: 1px 5px; /* Reduce el espacio interno (arriba/abajo y los lados) */
+    text-align: center;
+    width: 60%; /* Cambié el ancho al 60% del contenedor para hacerlo más estrecho */
+    max-width: 400px; /* Establece un máximo de 400px para que no se estire demasiado en pantallas grandes */
+    margin: 1cm auto 0 auto; /* Empuja el header hacia abajo 1cm y lo centra horizontalmente */
+    height: 80px; /* Ajusta la altura a 80px */
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.back-button .btn-regresar {
+    text-decoration: none;
+    background-color: #8ccf9b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin: 0.5cm auto 0 auto; /* Empuja el header hacia abajo 1cm y lo centra horizontalmente */
+   
+}
+
+.back-button .btn-regresar:hover {
+    background-color: #73b587;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    text-align: center;
+    margin: 80px auto;  /* Aumenta el margen superior para mover la barra de búsqueda más abajo */
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #8ccf9b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #73b587;
+}
+
+/* Contenedor de pacientes */
+.paciente-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.paciente-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.paciente-card h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.paciente-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.paciente-card button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background-color: #8ccf9b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paciente-card button:hover {
+    background-color: #73b587;
+}
+
+/* Secciones adicionales */
+.seccion-datos {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+.logo {
+    position: absolute; /* Posiciona la imagen de manera absoluta respecto a su contenedor */
+    top: 20px; /* Distancia desde la parte superior del contenedor */
+    left: 20px; /* Punto base desde el lado izquierdo */
+    margin-left: 10%; /* Mueve un poco a la derecha sin alterar el punto base */
+    width: 100px; /* Tamaño de la imagen del logo para pantallas pequeñas */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Encabezado en pantallas pequeñas */
+    header {
+        width: 80%; /* Aumenta el ancho del header en pantallas más pequeñas */
+        height: 70px; /* Ajusta la altura del header para pantallas pequeñas */
+    }
+
+    /* Tamaño del logo en pantallas más pequeñas */
+    .logo {
+        width: 80px; /* Reduce el tamaño del logo */
+        top: 20px; /* Ajusta la posición del logo hacia arriba */
+        left: -10px; /* Ajusta la posición del logo hacia la izquierda */
+
+    }
+
+    /* Aumenta el tamaño de la barra de búsqueda */
+    .search-bar input {
+        width: 200px; /* Reduce el ancho de la barra de búsqueda en pantallas más pequeñas */
+    }
+
+    .search-bar button {
+        padding: 8px 16px; /* Ajusta el tamaño del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Encabezado para dispositivos muy pequeños */
+    header {
+        width: 40%; /* Aumenta el ancho del header */
+        height: 120px; /* Ajusta la altura a un tamaño más pequeño */
+    }
+
+    /* Tamaño del logo en pantallas muy pequeñas */
+    .logo {
+        width: 60px; /* Reduce aún más el tamaño del logo */
+        top: 30px; /* Baja aún más el logo en pantallas pequeñas */
+        left: 1px; /* Ajusta la posición del logo */
+    }
+
+    /* Tamaño de la barra de búsqueda */
+    .search-bar input {
+        width: 180px; /* Ajusta el ancho de la barra de búsqueda */
+    }
+
+    .search-bar button {
+        padding: 6px 14px; /* Ajusta el tamaño del botón */
+    }
+}

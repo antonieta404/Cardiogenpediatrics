@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo suave */
+}
+header {
+    text-align: center;
+    padding: 1px 5px; /* Ajusta el espacio interno (arriba/abajo y los lados) */
+    background-color: #a3d4ff; /* Color pastel */
+    color: white;
+    width: 60%; /* Establece el ancho al 60% para hacerlo más estrecho */
+    max-width: 400px; /* Establece un máximo de 400px para evitar que se estire en pantallas grandes */
+    margin: 1cm auto 0 auto; /* Empuja el header hacia abajo 1cm y lo centra horizontalmente */
+    height: 80px; /* Ajusta la altura a 80px */
+    border-bottom: 2px solid #a3d4ff; /* Agrega un borde inferior del mismo color */
+}
+
+header h1 {
+    margin: 0;
+    color: #333; /* Color oscuro para el texto */
+}
+
+.back-button {
+    margin-top: 10px;
+}
+
+.btn-regresar {
+    text-decoration: none;
+    background-color: #8ccf9b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    margin: 0.5cm auto 0 auto; /* Empuja el header hacia abajo 1cm y lo centra horizontalmente */
+   
+}
+
+.btn-regresar:hover {
+    background-color: #73b587;
+}
+
+.btn-regresar:hover {
+    background-color: #73b587;
+}
+.pago-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Ajusta para centrar con el header */
+    padding: 20px;
+    margin-top: -300px; /* Mueve el contenedor hacia arriba */
+}
+table {
+    border-collapse: collapse;
+    width: 80%; /* Ajusta el ancho */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+table th {
+    background-color: #8ccf9b;
+    color: white;
+}
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color alternativo */
+}
+table tr:hover {
+    background-color: #d5f0e1;
+}
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+.logo {
+    position: absolute; /* Posiciona la imagen de manera absoluta respecto a su contenedor */
+    top: 20px; /* Distancia desde la parte superior del contenedor */
+    left: 20px; /* Punto base desde el lado izquierdo */
+    margin-left: 10%; /* Mueve un poco a la derecha sin alterar el punto base */
+    width: 100px; /* Tamaño de la imagen del logo para pantallas pequeñas */
+}
+.intro-container {
+    text-align: center; /* Centra el texto */
+    margin: 100px auto; /* Baja el texto al usar margen superior */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333; /* Color del texto */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin-top: 40px; /* Mueve el contenedor hacia arriba */
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    header {
+        width: 80%;
+        margin: 1cm auto 0 auto;
+        height: 70px; /* Reduce la altura del header */
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 8%;
+    }
+
+    .btn-regresar {
+        padding: 8px 16px;
+        margin: 0.5cm auto 0 auto;
+    }
+
+    .pago-container {
+        margin-top: -200px; /* Ajusta el margen superior para centrar mejor */
+    }
+
+    table {
+        width: 90%; /* Ajusta el ancho de la tabla */
+        margin-top: -200px; /* Mueve la tabla hacia arriba */
+    }
+
+    table th, table td {
+        padding: 10px; /* Reduce el padding de las celdas */
+    }
+
+    .intro-container {
+        margin: 80px auto; /* Reduce el margen superior */
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 50%;
+        margin: 0.5cm auto 0 auto;
+        height: 80px; /* Reduce más la altura */
+    }
+
+    .logo {
+        width: 70px;
+        margin-left: 5%;
+    }
+
+    .btn-regresar {
+        padding: 8px 14px;
+        margin-top: 5px;
+    }
+
+    .pago-container {
+        margin-top: -150px; /* Ajusta el margen superior */
+    }
+
+    table {
+        width: 95%; /* Aumenta el ancho de la tabla */
+        margin-top: -200px; /* Mueve la tabla hacia arriba */
+    }
+
+    table th, table td {
+        padding: 8px; /* Reduce el padding de las celdas */
+    }
+
+    .intro-container {
+        margin: 60px auto; /* Ajusta el margen superior */
+        font-size: 12px; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 40%;
+        margin: 0.5cm auto 0 auto;
+        height: 110px; /* Ajuste aún más pequeño para pantallas muy pequeñas */
+    }
+
+    .logo {
+        width: 60px;
+        margin-left: 5%;
+    }
+
+    .btn-regresar {
+        padding: 6px 12px;
+        margin-top: 3px;
+    }
+
+    .pago-container {
+        margin-top: -100px; /* Ajusta el margen superior */
+    }
+
+    table {
+        width: 100%; /* La tabla ocupa todo el ancho disponible */
+        font-size: 12px; /* Reduce el tamaño de la fuente para las celdas */
+        margin-top: -150px; /* Mueve la tabla hacia arriba */
+    }
+
+    table th, table td {
+        padding: 4px; /* Reduce aún más el padding de las celdas */
+        font-size: 12px; /* Reducir el tamaño de la fuente de las celdas */
+    }
+
+    table th {
+        font-size: 14px; /* Mantiene un tamaño de fuente mayor para los encabezados */
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f9f9f9; /* Color alternativo suave */
+    }
+
+    table tr:hover {
+        background-color: #e0f7fa; /* Color de hover más claro */
+    }
+
+    .intro-container {
+        margin: 40px auto; /* Ajusta el margen superior */
+        font-size: 10px; /* Reduce el tamaño de la fuente */
+    }
+}

@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    background-color: white; /* Fondo aqua claro */
+    color: #4A148C; /* Texto morado oscuro */
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo de la página */
+}
+
+h1 {
+    color: #E040FB; /* Rosa fosforescente para el título */
+    text-align: center; /* Centra el texto del título */
+    font-size: 2.5rem; /* Tamaño del texto del título, usando rem para ser escalable */
+    margin-top: 20px; /* Espacio en la parte superior del título */
+}
+
+.form-control {
+    background-color: #F3E5F5; /* Fondo de entrada lila claro */
+    border: 2px solid #18FFFF; /* Borde aqua fosforescente */
+    color: #4A148C; /* Color del texto dentro del input */
+    padding: 10px; /* Espacio interno del input */
+    border-radius: 8px; /* Bordes redondeados del input */
+}
+
+.form-control:focus {
+    background-color: #E1BEE7; /* Fondo de entrada lila suave al enfocar */
+    border-color: #E040FB; /* Cambia el color del borde a rosa fosforescente al enfocar */
+    box-shadow: 0 0 8px #E040FB; /* Agrega una sombra rosa fosforescente al enfocar */
+}
+
+/* Botón de éxito (Iniciar sesión) */
+.btn-success {
+    background-color: #1DE9B6; /* Verde aqua fosforescente para el fondo del botón */
+    border-color: #1DE9B6; /* Color del borde del botón */
+    color: white; /* Color del texto dentro del botón */
+    border-radius: 8px; /* Bordes redondeados del botón */
+    font-weight: bold; /* Hace que el texto del botón sea negrita */
+    font-size: 0.9rem; /* Tamaño de fuente por defecto */
+    display: inline-block; /* Permite que el botón se ajuste al contenido */
+    text-align: center; /* Centra el texto dentro del botón */
+    margin: 5px; /* Espacio alrededor del botón para separación */
+    padding: 0.5em 1em; /* Espacio interno del botón */
+    max-width: 200px; /* Ancho máximo para el botón */
+    width: 100%; /* Permite que el botón ocupe el 100% del ancho disponible */
+    margin-left: 220px; /* Mueve el formulario más a la derecha */
+}
+
+.btn-success:hover {
+    background-color: #00BFA5; /* Cambia a un verde aqua más oscuro al pasar el mouse */
+}
+
+/* Botón primario (Registrarse) */
+.btn-primary {
+    background-color: #FF4081; /* Rosa fuerte fosforescente para el fondo del botón */
+    border-color: #FF4081; /* Color del borde del botón */
+    color: white; /* Color del texto dentro del botón */
+    border-radius: 8px; /* Bordes redondeados del botón */
+    font-weight: bold; /* Hace que el texto del botón sea negrita */
+    font-size: 0.9rem; /* Tamaño de fuente por defecto */
+    display: inline-block; /* Permite que el botón se ajuste al contenido */
+    text-align: center; /* Centra el texto dentro del botón */
+    margin: 5px; /* Espacio alrededor del botón para separación */
+    padding: 0.5em 1em; /* Espacio interno del botón */
+    max-width: 200px; /* Ancho máximo para el botón */
+    width: 100%; /* Permite que el botón ocupe el 100% del ancho disponible */
+    margin-left: 220px; /* Mueve el formulario más a la derecha */
+}
+
+.btn-primary:hover {
+    background-color: #F50057; /* Cambia a un rosa oscuro al pasar el mouse */
+}
+
+a {
+    color: #18FFFF; /* Color aqua fosforescente para los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a:hover {
+    color: #FF4081; /* Cambia el color a rosa fosforescente al pasar el mouse */
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+/* Estilos de la imagen del logo */
+.logo {
+    position: absolute; /* Posiciona la imagen de manera absoluta respecto a su contenedor */
+    top: 20px; /* Distancia desde la parte superior del contenedor */
+    left: 20px; /* Punto base desde el lado izquierdo */
+    margin-left: 10%; /* Mueve un poco a la derecha sin alterar el punto base */
+    width: 80px; /* Tamaño de la imagen del logo para pantallas pequeñas */
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 576px) {
+    .logo {
+        width: 50px; /* Tamaño más pequeño para teléfonos */
+        top: 35px; /* Baja el logo aún más */
+        left: 10px; /* Mantiene la posición horizontal */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Reduce el tamaño del título */
+    }
+
+    .btn-success, .btn-primary {
+        font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+        padding: 0.4em 0.6em; /* Reduce el padding */
+        margin: 10px auto; /* Centra el botón */
+        display: block; /* Hace que el botón ocupe toda la línea */
+        width: 80%; /* Botones ocupan el 80% del ancho */
+    }
+
+    .form-control {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto dentro del input */
+    }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .logo {
+        width: 80px; /* Tamaño ajustado para tablets */
+        top: 30px; /* Baja el logo un poco más */
+        left: 15px; /* Ajusta la posición horizontal */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajusta ligeramente el tamaño del título */
+    }
+
+    .btn-success, .btn-primary {
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+        padding: 0.5em 0.8em; /* Ajusta el padding */
+        margin: 15px auto; /* Centra el botón */
+        display: block; /* Hace que el botón ocupe toda la línea */
+        width: 60%; /* Botones ocupan el 60% del ancho */
+    }
+
+    .form-control {
+        font-size: 1rem; /* Ajusta el tamaño del texto dentro del input */
+    }
+}
+
+/* Para pantallas grandes (laptops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .logo {
+        width: 100px; /* Tamaño para laptops */
+        top: 20px; /* Ajusta la posición vertical */
+        left: 20px; /* Ajusta la posición horizontal */
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Escala el tamaño del título */
+    }
+
+    .btn-success, .btn-primary {
+        font-size: 1rem; /* Tamaño de fuente estándar */
+        padding: 0.6em 1em; /* Padding cómodo */
+        margin-left: 180px; /* Ajusta el margen según diseño original */
+        width: auto; /* Ajusta al contenido */
+    }
+
+    .form-control {
+        font-size: 1.1rem; /* Ajusta el tamaño del texto dentro del input */
+    }
+}
+
+/* Para pantallas muy grandes (desktops) */
+@media (min-width: 1201px) {
+    .logo {
+        width: 120px; /* Tamaño para desktops */
+        top: 25px; /* Ajusta la posición vertical */
+        left: 25px; /* Ajusta la posición horizontal */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Tamaño completo para desktops */
+    }
+
+    .btn-success, .btn-primary {
+        font-size: 1.1rem; /* Escala el tamaño del texto del botón */
+        padding: 0.6em 1.2em; /* Padding amplio */
+        margin-left: 220px; /* Asegura el margen original */
+        width: auto; /* Ajusta al contenido */
+    }
+
+    .form-control {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto dentro del input */
+    }
+}
